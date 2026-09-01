@@ -59,9 +59,11 @@ The helper uses the `access_token` custom field as the git password rather than 
 | `all` | Make the script executable |
 | `install` | Install to `$(PREFIX)/bin` (default `/usr/local/bin`) |
 | `clean` | Remove the installed binary |
+| `config` | Register helpers in git config (cache + bw) |
 
 ```bash
 make install PREFIX=~/.local/bin
+make config TIMEOUT=600
 make clean
 ```
 
